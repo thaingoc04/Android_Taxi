@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit">
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="208dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/txtUPirce"
+        app:layout_constraintTop_toBottomOf="@+id/editDistance" />
+
+    <EditText
+        android:id="@+id/editPromotion"
+        android:layout_width="204dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/txtPromotion"
+        app:layout_constraintTop_toBottomOf="@+id/editPrice" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="410dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_launcher_background"
+        android:text="Minh Anh"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCarId"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:text="Car Id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtRoad"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:text="Distance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCarId" />
+
+    <TextView
+        android:id="@+id/txtUPirce"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:text="Unit Price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRoad" />
+
+    <TextView
+        android:id="@+id/txtPromotion"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:text="Promotion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUPirce" />
+
+    <EditText
+        android:id="@+id/editCarId"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/txtCarId"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <EditText
+        android:id="@+id/editDistance"
+        android:layout_width="206dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/txtRoad"
+        app:layout_constraintTop_toBottomOf="@+id/editCarId" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:text="Edit"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancel"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPromotion" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="92dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPromotion" />
+</androidx.constraintlayout.widget.ConstraintLayout>
